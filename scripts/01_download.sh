@@ -1,3 +1,15 @@
+#!/bin/bash
+
+set -e
+
+# Create directories
+mkdir -p data
+mkdir -p reference
+
+# -------------------------------
+# Download RNA-seq data
+# -------------------------------
+
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/042/SRR31011842/SRR31011842_1.fastq.gz
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/048/SRR31011848/SRR31011848_1.fastq.gz
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/044/SRR31011844/SRR31011844_1.fastq.gz
@@ -14,3 +26,21 @@ wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/041/SRR31011841/SRR31011841_
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/043/SRR31011843/SRR31011843_2.fastq.gz
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/047/SRR31011847/SRR31011847_2.fastq.gz
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/045/SRR31011845/SRR31011845_2.fastq.gz
+
+# -------------------------------
+# Download HISAT2 index
+# -------------------------------
+
+wget -c https://genome-idx.s3.amazonaws.com/hisat/wbcel235_tran.tar.gz -P reference/
+
+# Extract index
+
+tar -xvzf reference/wbcel235_tran.tar.gz -C reference/
+
+# -------------------------------
+# Download GTF annotation
+# -------------------------------
+
+wget -c ftp://ftp.ensembl.org/pub/release-110/gtf/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.110.gtf.gz -P reference/
+
+echo "Download and setup complete!"
