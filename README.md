@@ -4,13 +4,13 @@ This project performs a complete RNA-seq analysis pipeline to study gene express
 
 ---
 
-## 🧬 Study Objective
+##  Study Objective
 
 The goal of this project is to identify gene expression changes during aging by processing raw RNA-seq data through a reproducible computational pipeline, from quality control to gene-level quantification.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 Public RNA-seq datasets were obtained from NCBI SRA:
 
@@ -28,7 +28,7 @@ Reference genome: WBcel235 (Ensembl)
 
 ---
 
-## 🛠️ Tools & Software
+##  Tools & Software
 
 - FastQC – raw read quality control  
 - MultiQC – aggregated QC reporting  
@@ -39,7 +39,7 @@ Reference genome: WBcel235 (Ensembl)
 
 ---
 
-## ⚙️ Workflow Overview
+##  Workflow Overview
 
 The pipeline follows a standard RNA-seq workflow:
 
@@ -53,7 +53,7 @@ The pipeline follows a standard RNA-seq workflow:
 
 ---
 
-## 📥 Data Download
+##  Data Download
 
 Raw sequencing data was obtained using:
 
