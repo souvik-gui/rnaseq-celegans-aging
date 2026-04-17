@@ -8,7 +8,7 @@ This project reanalyses publicly available RNA-seq data to study gene expression
 - FastQC
 - MultiQC
 - HISAT2
-- samtools
+- subread
 - DESeq2 (planned)
 
 ## Workflow
