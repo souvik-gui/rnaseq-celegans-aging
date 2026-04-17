@@ -1,0 +1,12 @@
+name: rnaseq
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - fastqc
+  - multiqc
+  - hisat2
+  - subread
+  
+prefix: /home/guy/miniconda3/envs/rnaseq
