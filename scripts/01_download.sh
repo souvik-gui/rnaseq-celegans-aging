@@ -27,22 +27,4 @@ wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/043/SRR31011843/SRR31011843_
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/047/SRR31011847/SRR31011847_2.fastq.gz
 wget -nc http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR310/045/SRR31011845/SRR31011845_2.fastq.gz
 
-# -------------------------------
-# Download HISAT2 index
-# -------------------------------
 
-wget -c https://genome-idx.s3.amazonaws.com/hisat/wbcel235_tran.tar.gz -P reference/
-
-# Extract index
-
-tar -xvzf reference/wbcel235_tran.tar.gz -C reference/
-
-# -------------------------------
-# Download GTF and FASTA annotation
-# -------------------------------
-
-wget -c ftp://ftp.ensembl.org/pub/release-110/gtf/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.110.gtf.gz -P reference/
-
-wget https://ftp.ensembl.org/pub/release-110/fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.toplevel.fa.gz
-
-echo "Download and setup complete!"
