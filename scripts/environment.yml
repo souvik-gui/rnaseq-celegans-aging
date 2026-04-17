@@ -8,5 +8,6 @@ dependencies:
   - multiqc
   - hisat2
   - subread
+  - samtools
   
 prefix: /home/guy/miniconda3/envs/rnaseq
