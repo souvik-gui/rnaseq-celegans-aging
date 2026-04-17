@@ -1,0 +1,15 @@
+Status	results/alignment/SRR31011841.bam	results/alignment/SRR31011842.bam	results/alignment/SRR31011843.bam	results/alignment/SRR31011844.bam	results/alignment/SRR31011845.bam	results/alignment/SRR31011846.bam	results/alignment/SRR31011847.bam	results/alignment/SRR31011848.bam
+Assigned	42760426	42006268	43074248	42741410	42642427	43007233	42937743	42502780
+Unassigned_Unmapped	947270	848613	727231	834760	699518	846278	854971	807130
+Unassigned_Read_Type	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	1666838	1585954	1544931	1566441	1666511	1548146	1550873	1650888
+Unassigned_Secondary	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	89318	94806	92353	92099	91000	88828	87949	81547
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	688078	696857	725326	706089	690971	716954	722771	699791
