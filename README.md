@@ -39,3 +39,7 @@ Run FastQC and MultiQC:
 
 ```bash
 bash scripts/02_qc.sh
+
+**## QC Summary**
+
+![QC Summary](results/figures/qc_summary.png)
