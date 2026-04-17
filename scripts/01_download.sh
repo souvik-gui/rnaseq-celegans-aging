@@ -38,9 +38,11 @@ wget -c https://genome-idx.s3.amazonaws.com/hisat/wbcel235_tran.tar.gz -P refere
 tar -xvzf reference/wbcel235_tran.tar.gz -C reference/
 
 # -------------------------------
-# Download GTF annotation
+# Download GTF and FASTA annotation
 # -------------------------------
 
 wget -c ftp://ftp.ensembl.org/pub/release-110/gtf/caenorhabditis_elegans/Caenorhabditis_elegans.WBcel235.110.gtf.gz -P reference/
+
+wget https://ftp.ensembl.org/pub/release-110/fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.toplevel.fa.gz
 
 echo "Download and setup complete!"
