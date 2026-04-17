@@ -16,6 +16,7 @@ echo "Running featureCounts..."
 
 featureCounts \
     -T $THREADS \
+    -p \
     -a "$GTF" \
     -o "$OUT_DIR/gene_counts.txt" \
     -t exon \
