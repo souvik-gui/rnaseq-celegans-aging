@@ -49,7 +49,7 @@ The pipeline follows a standard RNA-seq workflow:
 4. Read alignment  
 5. BAM processing and sorting  
 6. Gene-level quantification  
-7. Differential expression analysis (future step)
+7. Differential expression analysis 
 
 ---
 
