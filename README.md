@@ -1,6 +1,6 @@
 # RNA-seq Aging Analysis in *Caenorhabditis elegans*
 
-This project performs a complete RNA-seq analysis pipeline to study gene expression changes associated with aging in *Caenorhabditis elegans* using publicly available sequencing data.
+This project performs a complete RNA-seq analysis pipeline to study gene expression changes associated with 50uM Urolithin A (A potent mitophagy inducer) treatment in *Caenorhabditis elegans* using publicly available RNA sequencing data (GSE279559).
 
 ---
 
