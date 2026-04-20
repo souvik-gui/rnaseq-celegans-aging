@@ -59,6 +59,9 @@ Raw sequencing data was obtained using:
 
 ```bash
 bash scripts/01_download.sh
+```
+
+## Results
 
 ##  Results
 
