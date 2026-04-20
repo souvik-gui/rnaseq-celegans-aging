@@ -59,3 +59,12 @@ Raw sequencing data was obtained using:
 
 ```bash
 bash scripts/01_download.sh
+
+##  Results
+
+### Principal Component Analysis (PCA)
+
+![PCA Plot](results/figures/C_elegans_treated_vs_Control_PCA.svg)
+
+Principal Component Analysis shows clear separation between control and treatment along PC1 (49% variance), indicating treatment-driven transcriptional changes. However, high intra-group variability in control samples likely reduces statistical power in differential expression analysis.
+
