@@ -61,13 +61,20 @@ Raw sequencing data was obtained using:
 bash scripts/01_download.sh
 ```
 
-## Results
-
 ##  Results
 
 ### Principal Component Analysis (PCA)
 
-![PCA Plot](results/figures/C_elegans_treated_vs_Control_PCA.svg)
+![PCA Plot](reference/results/C_elegans_treated_vs_Control_PCA.svg)
 
 Principal Component Analysis shows clear separation between control and treatment along PC1 (49% variance), indicating treatment-driven transcriptional changes. However, high intra-group variability in control samples likely reduces statistical power in differential expression analysis.
+
+## Differential Expression Analysis
+
+### Volcano Plot
+
+This plot shows significantly upregulated and downregulated genes 
+based on log2 fold change and adjusted p-value.
+
+![Volcano Plot](reference/results/volcano_plot_publication.svg)
 
