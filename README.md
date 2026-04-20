@@ -14,14 +14,14 @@ The goal of this project is to identify gene expression changes during aging by 
 
 Public RNA-seq datasets were obtained from NCBI SRA:
 
-- SRR31011841  
-- SRR31011842  
-- SRR31011843  
-- SRR31011844  
-- SRR31011845  
-- SRR31011846  
-- SRR31011847  
-- SRR31011848  
+- SRR31011841  (50uM Urolithin A treated Rep-1)
+- SRR31011842  (50uM Urolithin A treated Rep-2)
+- SRR31011843  (50uM Urolithin A treated Rep-3)
+- SRR31011844  (50uM Urolithin A treated Rep-4)
+- SRR31011845  (Conrol Rep-1)
+- SRR31011846  (Conrol Rep-2)
+- SRR31011847  (Conrol Rep-3)
+- SRR31011848  (Conrol Rep-4)
 
 Organism: *Caenorhabditis elegans*  
 Reference genome: WBcel235 (Ensembl)
@@ -65,7 +65,7 @@ bash scripts/01_download.sh
 
 ### Principal Component Analysis (PCA)
 
-![PCA Plot](reference/results/C_elegans_treated_vs_Control_PCA.svg)
+![PCA Plot](reference/results/C_elegans_treated_vs_Control_PCA.png)
 
 Principal Component Analysis shows clear separation between control and treatment along PC1 (49% variance), indicating treatment-driven transcriptional changes. However, high intra-group variability in control samples likely reduces statistical power in differential expression analysis.
 
@@ -76,5 +76,5 @@ Principal Component Analysis shows clear separation between control and treatmen
 This plot shows significantly upregulated and downregulated genes 
 based on log2 fold change and adjusted p-value.
 
-![Volcano Plot](reference/results/volcano_plot_publication.svg)
+![Volcano Plot](reference/results/volcano_plot_publication.png)
 
