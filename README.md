@@ -35,7 +35,7 @@ Reference genome: WBcel235 (Ensembl)
 - HISAT2 – read alignment to reference genome  
 - samtools – BAM processing  
 - Subread (featureCounts) – gene-level quantification  
-- DESeq2 (planned) – differential expression analysis  
+- DESeq2 – differential expression analysis  
 
 ---
 
@@ -61,20 +61,27 @@ Raw sequencing data was obtained using:
 bash scripts/01_download.sh
 ```
 
-##  Results
+## Results
 
 ### Principal Component Analysis (PCA)
 
 ![PCA Plot](reference/results/C_elegans_treated_vs_Control_PCA.png)
 
-Principal Component Analysis shows clear separation between control and treatment along PC1 (49% variance), indicating treatment-driven transcriptional changes. However, high intra-group variability in control samples likely reduces statistical power in differential expression analysis.
+Principal Component Analysis (PCA) reveals clear separation between control and UA-treated samples along PC1 (49% variance), indicating strong treatment-driven transcriptional differences. Notably, higher dispersion among control replicates suggests intra-group variability, which may reduce statistical power in downstream differential expression analysis.
+
+---
 
 ## Differential Expression Analysis
 
 ### Volcano Plot
 
-This plot shows significantly upregulated and downregulated genes 
-based on log2 fold change and adjusted p-value.
-
 ![Volcano Plot](reference/results/volcano_plot_publication.png)
 
+The volcano plot summarizes differential gene expression between UA-treated and control samples. Genes were classified as significant based on the following thresholds:
+
+- |log2 Fold Change| ≥ 0.1  
+- Adjusted p-value (FDR) < 0.05  
+
+Upregulated genes are shown in green, while downregulated genes are shown in red. Highly significant genes are capped at -log10(adjusted p-value) = 30 for improved visualization. The top differentially expressed genes (ranked by combined effect size and significance) are labeled.
+
+Overall, the distribution indicates a modest but biologically relevant shift in gene expression upon UA treatment.
