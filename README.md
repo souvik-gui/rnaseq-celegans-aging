@@ -24,7 +24,7 @@ Public RNA-seq datasets were obtained from NCBI SRA:
 - SRR31011848  (Conrol Rep-4)
 
 Organism: *Caenorhabditis elegans*  
-Reference genome: WBcel235 (Ensembl)
+Reference genome: WBcel235 (GCA_000002985.3_WBcel235)
 
 ---
 
@@ -35,9 +35,9 @@ Reference genome: WBcel235 (Ensembl)
 - HISAT2(v2.2.2) – read alignment to reference genome  
 - samtools(1.19.2) – BAM processing  
 - Subread (featureCounts v2.1.1) – gene-level quantification  
-- DESeq2(v1.50.2) – differential expression analysis  
+- DESeq2(v1.50.2) – differential expression analysis with a threshold of p value < 0.05 and |FC| > 0.1 
 - rtracklayer(v1.70.1)
-- ggPlot2(v4.0.1)
+- ggPlot2(v4.0.1) for Volcano plots
 - ggrepel(v0.9.6)
 - dplyr(v1.1.4)
   
