@@ -1,6 +1,6 @@
 # RNA-seq Aging Analysis in *Caenorhabditis elegans*
 
-This project performs a complete RNA-seq analysis pipeline to study gene expression changes associated with 50uM Urolithin A (A potent mitophagy inducer) treatment in *Caenorhabditis elegans* using publicly available RNA sequencing data (GSE279559).
+This project performs a complete RNA-seq analysis pipeline to study gene expression changes associated with 50uM Urolithin A (A potent mitophagy inducer) treatment in *Caenorhabditis elegans* using publicly available RNA sequencing data (GSE279559) from the paper *Urolithin Α modulates inter-organellar communication via calcium-dependent mitophagy to promote healthy ageing* published in in Autophagy. 2025 Sep 29;21(12):3097–3122. doi: 10.1080/15548627.2025.2561073.
 
 ---
 
@@ -35,7 +35,7 @@ Reference genome: WBcel235 (GCA_000002985.3_WBcel235)
 - HISAT2(v2.2.2) – read alignment to reference genome  
 - samtools(1.19.2) – BAM processing  
 - Subread (featureCounts v2.1.1) – gene-level quantification  
-- DESeq2(v1.50.2) – differential expression analysis with a threshold of p value < 0.05 and |FC| > 0.1 
+- DESeq2(v1.50.2) – differential expression analysis  
 - rtracklayer(v1.70.1)
 - ggPlot2(v4.0.1) for Volcano plots
 - ggrepel(v0.9.6)
@@ -54,7 +54,8 @@ The pipeline follows a standard RNA-seq workflow:
 5. BAM processing and sorting  
 6. Gene-level quantification  
 7. Differential expression analysis 
-
+8. PCA plot 
+9. Volcano Plot 
 ---
 
 ##  Data Download
@@ -78,6 +79,8 @@ Principal Component Analysis (PCA) reveals clear separation between control and 
 ## Differential Expression Analysis
 
 ### Volcano Plot
+
+A volcano plot is generated as given in Figure S1.G
 
 ![Volcano Plot](reference/results/volcano_plot_publication.png)
 
