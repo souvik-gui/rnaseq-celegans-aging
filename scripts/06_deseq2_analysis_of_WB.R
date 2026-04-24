@@ -1,3 +1,19 @@
+# Installing Bioconductor Manager
+install.packages("BiocManager")
+
+# Installing required Bioconductor packages
+BiocManager::install(c("DESeq2", "rtracklayer"))
+
+# Installing standard CRAN packages
+install.packages(c(
+  "openxlsx",
+  "ggplot2",
+  "ggrepel",
+  "dplyr",
+  "pheatmap",
+  "RColorBrewer"
+))
+
 library(DESeq2)
 library(rtracklayer)
 library(openxlsx)
