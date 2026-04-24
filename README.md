@@ -36,10 +36,10 @@ Reference genome: WBcel235 (GCA_000002985.3_WBcel235)
 - samtools(1.19.2) – BAM processing  
 - Subread (featureCounts v2.1.1) – gene-level quantification  
 - DESeq2(v1.50.2) – differential expression analysis  
-- rtracklayer(v1.70.1)
-- ggPlot2(v4.0.1) for Volcano plots
-- ggrepel(v0.9.6)
-- dplyr(v1.1.4)
+- rtracklayer(v1.70.1) - importing genomic annotation files like GTF
+- ggPlot2(v4.0.1) - for Volcano plots
+- ggrepel(v0.9.6) - preventing overlapping texts in plots
+- dplyr(v1.1.4) - data celaning (filtering, arranging)
   
 ---
 
