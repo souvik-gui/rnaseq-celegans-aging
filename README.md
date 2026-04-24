@@ -39,7 +39,7 @@ Reference genome: WBcel235 (GCA_000002985.3_WBcel235)
 - rtracklayer(v1.70.1) - importing genomic annotation files like GTF
 - ggPlot2(v4.0.1) - for Volcano plots
 - ggrepel(v0.9.6) - preventing overlapping texts in plots
-- dplyr(v1.1.4) - data celaning (filtering, arranging)
+- dplyr(v1.1.4) - data celaning (filtering, arranging and labeling)
   
 ---
 
