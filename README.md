@@ -1,94 +1,119 @@
-# RNA-seq Aging Analysis in *Caenorhabditis elegans*
-
-This project performs a complete RNA-seq analysis pipeline to study gene expression changes associated with 50uM Urolithin A (A potent mitophagy inducer) treatment in *Caenorhabditis elegans* using publicly available RNA sequencing data (GSE279559) from the paper *Urolithin Α modulates inter-organellar communication via calcium-dependent mitophagy to promote healthy ageing* published in in Autophagy. 2025 Sep 29;21(12):3097–3122. doi: 10.1080/15548627.2025.2561073.
-
----
-
-##  Study Objective
-
-The goal of this project is to identify gene expression changes during aging by processing raw RNA-seq data through a reproducible computational pipeline, from quality control to gene-level quantification.
+# 🧬 RNA-seq Differential Expression Analysis (DESeq2)
+### Aging Study in *Caenorhabditis elegans*
 
 ---
 
-##  Dataset
+## 🔹 Overview
 
-Public RNA-seq datasets were obtained from NCBI SRA:
+This repository demonstrates a **complete RNA-seq analysis workflow**, from raw sequencing data to biological insights using DESeq2.
 
-- SRR31011841  (50uM Urolithin A treated Rep-1)
-- SRR31011842  (50uM Urolithin A treated Rep-2)
-- SRR31011843  (50uM Urolithin A treated Rep-3)
-- SRR31011844  (50uM Urolithin A treated Rep-4)
-- SRR31011845  (Conrol Rep-1)
-- SRR31011846  (Conrol Rep-2)
-- SRR31011847  (Conrol Rep-3)
-- SRR31011848  (Conrol Rep-4)
-
-Organism: *Caenorhabditis elegans*  
-Reference genome: WBcel235 (GCA_000002985.3_WBcel235)
+The project showcases how RNA-seq data can be processed, analyzed, and interpreted to identify **differential gene expression patterns**.
 
 ---
 
-##  Tools & Software
+## 🔹 What I Deliver (for RNA-seq projects)
 
-- FastQC(v0.12.1) – raw read quality control  
-- MultiQC(v 1.33) – aggregated QC reporting  
-- HISAT2(v2.2.2) – read alignment to reference genome  
-- samtools(1.19.2) – BAM processing  
-- Subread (featureCounts v2.1.1) – gene-level quantification  
-- DESeq2(v1.50.2) – differential expression analysis  
-- rtracklayer(v1.70.1) - importing genomic annotation files like GTF
-- ggPlot2(v4.0.1) - for Volcano plots
-- ggrepel(v0.9.6) - preventing overlapping texts in plots
-- dplyr(v1.1.4) - data celaning (filtering, arranging and labeling)
-  
----
+From an RNA-seq dataset, I can provide:
 
-##  Workflow Overview
-
-The pipeline follows a standard RNA-seq workflow:
-
-1. Data acquisition  
-2. Quality control of raw reads  
-3. Reference genome indexing  
-4. Read alignment  
-5. BAM processing and sorting  
-6. Gene-level quantification  
-7. Differential expression analysis 
-8. PCA plot 
-9. Volcano Plot 
----
-
-##  Data Download
-
-Raw sequencing data was obtained using:
-
-```bash
-bash scripts/01_download.sh
-```
-
-## Results
-
-### Principal Component Analysis (PCA)
-
-![PCA Plot](reference/results/C_elegans_treated_vs_Control_PCA.png)
-
-Principal Component Analysis (PCA) reveals clear separation between control and UA-treated samples along PC1 (49% variance), indicating strong treatment-driven transcriptional differences. Notably, higher dispersion among control replicates suggests intra-group variability, which may reduce statistical power in downstream differential expression analysis.
+- ✅ Differentially expressed genes (DEGs)
+- ✅ PCA plot (sample clustering)
+- ✅ Volcano plot (publication-ready)
+- ✅ Heatmap (optional)
+- ✅ Clean results table (CSV/Excel)
+- ✅ Basic biological interpretation
+- ✅ Structured analysis report (PDF)
 
 ---
 
-## Differential Expression Analysis
+## 🔹 Sample Results
 
-### Volcano Plot
+### 📊 PCA Plot
+![PCA Plot](README_images/pca_plot.png)
 
-A volcano plot is generated as given in Figure S1.G
+Clear separation between control and treated samples indicates strong transcriptional differences.
 
-![Volcano Plot](reference/results/volcano_plot_publication.png)
+---
 
-The volcano plot summarizes differential gene expression between UA-treated and control samples. Genes were classified as significant based on the following thresholds:
+### 🌋 Volcano Plot
+![Volcano Plot](README_images/volcano_plot.png)
 
-- |log2 Fold Change| ≥ 0.1  
-- Adjusted p-value (FDR) < 0.05  
+- Significant genes identified using:
+  - Adjusted p-value (FDR) < 0.05  
+  - |log2 Fold Change| ≥ 0.1  
 
-Upregulated genes are shown in green, while downregulated genes are shown in red. Highly significant genes are capped at -log10(adjusted p-value) = 30 for improved visualization. The top differentially expressed genes (ranked by combined effect size and significance) are labeled.
+Upregulated genes are shown in red, downregulated in green.
 
-Overall, the distribution indicates a modest but biologically relevant shift in gene expression upon UA treatment.
+---
+
+## 🔹 Workflow Overview
+
+1. Raw data download (SRA)
+2. Quality control (FastQC, MultiQC)
+3. Alignment to reference genome (HISAT2)
+4. BAM processing (samtools)
+5. Gene quantification (featureCounts)
+6. Differential expression analysis (DESeq2)
+7. Visualization & interpretation
+
+---
+
+## 🔹 Tools & Technologies
+
+- R (DESeq2, ggplot2, dplyr)
+- HISAT2
+- FastQC / MultiQC
+- samtools
+- featureCounts
+
+---
+
+## 🔹 Example Dataset
+
+- Organism: *Caenorhabditis elegans*
+- Study: Urolithin A treatment and aging
+- Source: Public GEO dataset (GSE279559)
+
+---
+
+## ⚡ RNA-seq Analysis Service
+
+I offer **freelance RNA-seq data analysis services**, including:
+
+- Differential expression analysis (DESeq2)
+- Visualization (PCA, volcano, heatmaps)
+- Data cleaning & formatting
+- Result interpretation
+- Report generation
+
+👉 Suitable for:
+- MSc / PhD students  
+- Researchers  
+- Labs without bioinformatics support  
+
+---
+
+## ⏱ Turnaround Time
+
+- Typically **2–4 days**, depending on dataset size
+
+---
+
+## 💡 Notes
+
+- Can work with **raw FASTQ files** or **count matrices**
+- Custom analysis based on your experimental design
+- Revisions included
+
+---
+
+## 📩 Contact
+
+- Email: souvikbhaduri2001@gmail.com
+- LinkedIn: www.linkedin.com/in/contactsouvikbhaduri
+
+---
+
+## ⭐ If you find this useful
+
+Feel free to star the repo or reach out for collaboration or analysis work.
+
