@@ -28,6 +28,7 @@ From an RNA-seq dataset, I can provide:
 ## 🔹 Sample Results
 
 ### 📊 PCA Plot
+Check the scripts for the plots
 ![PCA Plot](README_images/pca_plot.png)
 
 Clear separation between control and treated samples indicates strong transcriptional differences.
@@ -35,6 +36,7 @@ Clear separation between control and treated samples indicates strong transcript
 ---
 
 ### 🌋 Volcano Plot
+Check the scripts for the plots
 ![Volcano Plot](README_images/volcano_plot.png)
 
 - Significant genes identified using:
